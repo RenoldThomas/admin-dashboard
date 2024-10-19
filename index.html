@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+    <div class="grid-container">
+
+        <!-- grid item that is also another grid container -->
+        <div class="header">
+
+            <!-- grid item that is also another grid container use template-columns -->
+            <div class="search">
+                <form action="#" method="get">
+                    <!-- will make button an image later -->
+                    <button type="submit">Search</button>
+                    <input type="search" id="search" name="q" placeholder="Search bar">
+                </form>
+                <div>Morgan Oakley</div>
+            </div>
+
+            <!-- grid item that is also another grid container use template-columns to sort out information -->
+            <div class="bottom-header">
+                <div class="name-introduction">
+                    <div>Hi there, </div>
+                    <div>Morgan Oakley(@morgan)</div>
+                </div>
+                <div class="button-container">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Height is entire column, width is 1fr-->
+        <div class="sidebar-container">
+            <h2>Dashboard</h2>
+            <ul class="access">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+            </ul>
+            <ul class="extra">
+                <li>Settings</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+
+        <!-- main-content is a flex container -->
+        <div class="main-content">
+
+            <!-- grid container with 2 columns -->
+            <div class="projects-section">
+                <h3>Your Projects</h3>
+                <div class="card">Super Cool Project</div>
+                <div class="card">Less Cool Project</div>
+                <div class="card">Impossible App</div>
+                <div class="card">Easy Peasy App</div>
+                <div class="card">Ad Blocker</div>
+                <div class="card">Money Maker</div>
+            </div>
+
+            <!-- flex container with flex-direction column -->
+            <div class="main-right-side">
+                <!-- grid with 3 rows 1 column -->
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcment-rows">Site Maintenance</div>
+                    <div class="announcment-rows">Community Share Day</div>
+                    <div class="announcment-rows">Updated Privacy Policy</div>
+                </div>
+
+                <!-- grid with 4 rows 1 column -->
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-rows">@tegan</div>
+                    <div class="trending-rows">@morgan</div>
+                    <div class="trending-rows">@kendall</div>
+                    <div class="trending-rows">@alex</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
