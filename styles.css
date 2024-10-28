@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 2fr 4fr;
+    height: 100vh;
 }
 
 .header {
@@ -53,7 +54,6 @@ body {
 }
 
 .sidebar-container {
-    /* display: grid; */
     grid-area: 1 / 1 / 4 / 2;
     background-color: #1992D3;
     color: white;
@@ -72,3 +72,27 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.main-content {
+    background-color: #E2E8F0;
+    grid-area: 2 / 2 / 4 / 3;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding: 16px;
+}
+
+.cards {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, 350px);
+}
+
+.individual-card {
+    background-color: white;
+    border-left: 5px solid #F0B329;
+    width: 300px;
+    height: auto;
+    padding: 16px;
+    border-radius: 5px;
+}
+
