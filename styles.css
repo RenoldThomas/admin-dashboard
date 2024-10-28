@@ -99,7 +99,7 @@ a {
 .main-right-side {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    width: 250px;
+    width: 225px;
 }
 
 .announcementcontent {
@@ -115,4 +115,16 @@ a {
     padding-top: 10px;
     font-size: 12px;
     font-weight: bold;
+}
+
+.trendingcontent {
+    background-color: white;
+    display: grid;
+    padding: 24px;
+    grid-template-rows: repeat(3, 50px);
+    border-radius: 5px;
+}
+
+.trending-rows {
+    font-size: 12px;
 }
