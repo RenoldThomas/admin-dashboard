@@ -96,3 +96,23 @@ a {
     border-radius: 5px;
 }
 
+.main-right-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 250px;
+}
+
+.announcementcontent {
+    background-color: white;
+    display: grid;
+    padding: 24px;
+    grid-template-rows: repeat(3, 50px);
+    border-radius: 5px;
+}
+
+.announcement-rows {
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
