@@ -14,19 +14,23 @@
         <div class="header">
             <div class="search">
                 <form action="#" method="get">
-                    <input type="image" src="images/magnify.png" name="searchbutton" for="searchbutton" id="searchbutton" width="20px" height="auto"/>
+                    <input type="image" src="images/magnify.png" name="searchbutton" for="searchbutton"
+                        id="searchbutton" width="20px" height="auto" />
                     <input type="search" id="search" name="search">
                 </form>
                 <div class="profilesettings">
-                    <img src="images/bell-ring-outline.png" alt="notification-bell" width="25px" height="auto" id="notification-bell">
-                    <img src="images/GolfPicture.JPG" alt="profilepicture" width="50px" height="50px" id="profilepicture">
+                    <img src="images/bell-ring-outline.png" alt="notification-bell" width="25px" height="auto"
+                        id="notification-bell">
+                    <img src="images/GolfPicture.JPG" alt="profilepicture" width="40px" height="40px"
+                        id="profilepicture">
                     <div id="profilename">Renold T</div>
                 </div>
             </div>
 
             <div class="bottom-header">
                 <div class="name-introduction">
-                    <img src="images/GolfPicture.JPG" alt="profilepicture" width="75px" height="75px" id="profilepicture">
+                    <img src="images/GolfPicture.JPG" alt="profilepicture" width="75px" height="75px"
+                        id="profilepicture">
                     <div id="nameintroduction">
                         <div>Hi there, </div>
                         <div id="name">Renold Thomas (@renold)</div>
@@ -41,19 +45,49 @@
         </div>
 
         <div class="sidebar-container">
-            <h2>Dashboard</h2>
+            <div class="dashboard-flex-container">
+                <img src="images/view-dashboard.svg" alt="picture of dashbaord" width="35" height="auto">
+                <h2>Dashboard</h2>
+            </div>
             <ul class="access">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
+                <li id="homesidebar">
+                    <img src="images/home.svg" alt="home" width="18px" height="auto">
+                    <a href="#">Home</a>
+                </li>
+                <li id="profilesidebar">
+                    <img src="images/card-account-details-outline.svg" alt="profile" width="18px" height="auto">
+                    <a href="#">Profile</a>
+                </li>
+                <li id="messagessidebar">
+                    <img src="images/message.svg" alt="messages" width="18px" height="auto">
+                    <a href="#">Messages</a>
+                </li>
+                <li id="historysidebar">
+                    <img src="images/history.svg" alt="history" width="18px" height="auto">
+                    <a href="#">History</a>
+                </li>
+                <li id="taskssidebar">
+                    <img src="images/tasks.svg" alt="tasks" width="18px" height="auto">
+                    <a href="#">Tasks</a>
+                </li>
+                <li id="communitiessidebar">
+                    <img src="images/communities.svg" alt="communities" width="18px" height="auto">
+                    <a href="#">Communities</a>
+                </li>
             </ul>
             <ul class="extra">
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li id="settingssidebar">
+                    <img src="images/settings.svg" alt="" width="18px" height="auto">
+                    <a href="#">Settings</a>
+                </li>
+                <li id="supportsidebar">
+                    <img src="images/support.svg" alt="" width="18px" height="auto">
+                    <a href="#">Support</a>
+                </li>
+                <li id="privacysidebar">
+                    <img src="images/privacy.svg" alt="" width="18px" height="auto">
+                    <a href="#">Privacy</a>
+                </li>
             </ul>
         </div>
 
