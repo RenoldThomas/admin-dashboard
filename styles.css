@@ -16,6 +16,7 @@ body {
     grid-template-rows: 0.5fr 1fr;
     padding-left: 32px;
     padding-top: 16px;
+    margin-bottom: 16px;
     height: 20vh;
 }
 
@@ -64,8 +65,16 @@ form {
 }
 
 .name-introduction {
+    /* display: flex;
+    flex-direction:column; */
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+#nameintroduction {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .name-introduction > * {
