@@ -42,10 +42,8 @@ form {
 
 .profilesettings {
     display: flex;
-    border: 2px solid black;
     gap: 24px;
     height: 50px;
-    /* justify-content: center; */
     align-items: center;
 }
 
