@@ -21,6 +21,7 @@ This project is a simple admin dashboard layout built with HTML and CSS. It prov
 
 1.  Clone the repository:  `git clone [your-repository-url]`
 2.  Open `index.html` in your web browser.
+3.  Alternatively, access the deployed version at https://renoldthomas.github.io/admin-dashboard
 
 ## File Structure
 
@@ -36,5 +37,7 @@ This project is a simple admin dashboard layout built with HTML and CSS. It prov
 * Add more components and features as needed.
 
 ## Author
-
 Renold T (@renold)
+
+## Credits
+This project was created as part of The Odin Project curriculum (2021).
