@@ -1,197 +1,232 @@
+/* Reset default body margins */
 body {
     margin: 0px;
+    /* Set a default font family */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Grid container for the main layout */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 2fr 4fr;
-    height: 100vh;
+    /* Define column and row sizes */
+    grid-template-columns: 1fr 4fr; /* Sidebar takes 1 part, main content takes 4 parts of the width */
+    grid-template-rows: 1fr 2fr 4fr; /* Header takes 1 part, middle section 2 parts, main content 4 parts of the height */
+    height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
+/* Header styling */
 .header {
     display: grid;
-    grid-area: 1 / 2 / 2 / 3; /*row start / column start / row end / column end */ 
-    grid-template-rows: 0.5fr 1fr;
-    padding-left: 32px;
-    padding-top: 16px;
-    margin-bottom: 16px;
-    height: 20vh;
+    grid-area: 1 / 2 / 2 / 3; /* Position the header in the grid (row start / column start / row end / column end) */ 
+    grid-template-rows: 0.5fr 1fr; /* Divide the header into two rows */
+    padding-left: 32px; /* Left padding */
+    padding-top: 16px; /* Top padding */
+    margin-bottom: 16px; /* Bottom margin */
+    height: 20vh; /* Set the height to 20% of the viewport height */
 }
 
+/* Search bar styling */
 .search {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    align-items: center;
-    justify-self: stretch;
-    margin-bottom: 16px;
+    grid-template-columns: 2.5fr 1fr; /* Divide the search area into two columns */
+    align-items: center; /* Vertically align items */
+    justify-self: stretch; /* Stretch horizontally */
+    margin-bottom: 16px; /* Bottom margin */
 }
 
+/* Form styling */
 form {
-    display: flex;
-    gap: 5px;
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 5px;    /* Add a gap between form elements */
 }
 
+/* Search input field styling */
 #search {
-    background-color: #E2E8F0;
-    border: none;
-    border-radius: 25px;    
-    width: 500px;
-    padding: 5px;
+    background-color: #E2E8F0; /* Light gray background */
+    border: none;             /* Remove border */
+    border-radius: 25px;    /* Rounded corners */
+    width: 500px;           /* Fixed width */
+    padding: 5px;            /* Padding inside the input */
 }
 
+/* Profile settings container styling */
 .profilesettings {
-    display: flex;
-    gap: 24px;
-    height: 50px;
-    align-items: center;
+    display: flex;     /* Use flexbox to align items in a row */
+    gap: 24px;        /* Gap between profile elements */
+    height: 50px;       /* Fixed height */
+    align-items: center; /* Vertically align items */
 }
 
+/* Profile picture styling */
 #profilepicture {
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid black;
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 2px solid black; /* Add a border */
 }
 
+/* Profile name styling */
 #profilename {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: bold;   /* Bold text */
 }
 
+/* Bottom header styling */
 .bottom-header {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr; /* Divide into two columns */
 }
 
+/* Name introduction styling */
 .name-introduction {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto; /* Profile pic and text */
     align-items: center;
 }
 
+/* Name introduction text container styling */
 #nameintroduction {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack the greeting and name vertically */
 }
 
+/* Bold text within name introduction */
 .name-introduction > * {
     font-weight: bold;
 }
 
+/* Name styling */
 #name {
     font-size: 28px;
 }
 
+/* Profile update buttons styling */
 .profileupdates {
-    border-radius: 50px;
-    background-color: #1992D3;
+    border-radius: 50px;   /* Rounded corners */
+    background-color: #1992D3; /* Blue background */
     text-align: center;
     padding: 10px;
     width: 100px;
-    color: white;
-    border: none;
-    margin: 10px 10px 0px 0px;
+    color: white;           /* White text */
+    border: none;           /* Remove border */
+    margin: 10px 10px 0px 0px; /* Top, right, bottom, left margins */
 }
 
+/* Sidebar container styling */
 .sidebar-container {
-    grid-area: 1 / 1 / 4 / 2;
-    background-color: #1992D3;
-    color: white;
+    grid-area: 1 / 1 / 4 / 2; /* Span all rows, 1st column */
+    background-color: #1992D3; /* Blue background */
+    color: white;             /* White text */
 }
 
+/* Dashboard title flex container styling */
 .dashboard-flex-container {
-    display: flex;
-    padding: 8px 16px;
-    gap: 8px;
+    display: flex;     /* Use flexbox */
+    padding: 8px 16px; /* Padding */
+    gap: 8px;          /* Gap between icon and text */
 }
 
+/* Unordered list styling */
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
     font-size: 24px;
+    padding-left: 0px;
+    margin-top: 20px;
 }
 
+/* List items styling */
 li {
-    padding: 5px 0px;
+    padding: 5px 0px; /* Padding */
 }
 
+/* Anchor (link) styling */
 a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
+    color: white;          /* White text */
+    text-decoration: none; /* Remove underline */
+    margin-left: 10px;     /* Left margin */
 }
 
+/* Main content styling */
 .main-content {
-    background-color: #E2E8F0;
-    grid-area: 2 / 2 / 4 / 3;
+    background-color: #E2E8F0; /* Light gray background */
+    grid-area: 2 / 2 / 4 / 3; /* Span rows 2-4, column 2 */
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 2.5fr 1fr; /* Two columns */
     padding: 16px;
     height: 100vh;
     box-shadow: 2px -2px 5px #CCD1D8;
 }
 
+/* Cards container styling */
 .cards {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, 350px); /* Responsive columns */
 }
 
+/* Individual card styling */
 .individual-card {
-    background-color: white;
-    border-left: 5px solid #F0B329;
+    background-color: white;   /* White background */
+    border-left: 5px solid #F0B329; /* Colored left border */
     width: 300px;
     height: fit-content;
-    padding: 32px 16px 16px 16px;
-    border-radius: 5px;
+    padding: 32px 16px 16px 16px; /* Padding */
+    border-radius: 5px;        /* Rounded corners */
     display: flex;
-    flex-direction: column;
-    box-shadow: 2px 3px 5px #CED3D9;
+    flex-direction: column;    /* Stack content vertically */
+    box-shadow: 2px 3px 5px #CED3D9; /* Shadow */
 }
 
+/* Card title styling */
 .card-title {
     font-weight: bold;
 }
 
+/* Card content styling */
 .card-content {
     font-weight: lighter;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
+/* Icon container styling */
 .three-icon-flexcontainer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align icons to the right */
     gap: 16px;
 }
 
+/* Main right side styling */
 .main-right-side {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; /* Two rows */
     width: 225px;
 }
 
+/* Announcement content styling */
 .announcementcontent {
     background-color: white;
     display: grid;
     padding: 24px;
-    grid-template-rows: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px); /* Three rows */
     border-radius: 5px;
     box-shadow: 2px 3px 5px #CED3D9;
 }
 
+/* Announcement rows styling */
 .announcement-rows {
     padding-top: 10px;
     display: flex; /* Enable flexbox for better content handling */
     flex-direction: column; /* Stack content vertically */
 }
 
+/* Announcement title styling */
 .announcement-title {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+/* Announcement content styling */
 .announcement-content {
     display: block;
     overflow: hidden;
@@ -204,34 +239,38 @@ a {
     font-weight: lighter;
 }
 
-
+/* Trending content styling */
 .trendingcontent {
     background-color: white;
     display: grid;
     padding: 24px;
-    grid-template-rows: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px); /* Four rows */
     gap: 8px;
     border-radius: 5px;
     box-shadow: 2px 3px 5px #CED3D9;
 }
 
+/* Trending row styling */
 .trending-row {
     display: grid;
-    grid-template-columns: 0.25fr 1fr;
+    grid-template-columns: 0.25fr 1fr; /* Two columns */
     gap: 5px;
     align-items: center;
 }
 
+/* Trending row profile picture styling */
 .trending-row-pfp {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
+/* Trending tag styling */
 .trending-tag {
     font-size: 12px;
 }
 
+/* Trending subtext styling */
 .trending-subtext {
     font-size: 10px;
     font-weight: lighter;
